@@ -126,7 +126,7 @@ proc initGame(gameState: var GameState) =
     gameState.status = Intro
     gameState.score = 0
 
-func drawScoreBoard(gameState: var GameState) =
+proc drawScoreBoard(gameState: var GameState) =
     let
         scoreBoardRect = Rectangle(x: 0, y: 0, width: WIDTH, height: paddingTop)
         scoreDisplay = "score: " & $gameState.score
@@ -151,7 +151,7 @@ func drawScoreBoard(gameState: var GameState) =
             White,
         )
 
-func drawBullet(gameState: GameState) =
+proc drawBullet(gameState: GameState) =
     drawRectangle(
         Rectangle(
             x: gameState.bullet.x,
@@ -196,7 +196,7 @@ proc handleKeyPresses(gameState: var GameState, sound: Sound) =
             initGame(gameState)
             gameState.status = Playing
 
-func drawPaddle(gameState: GameState) =
+proc drawPaddle(gameState: GameState) =
     drawRectangle(
         Rectangle(
             x: gameState.paddle.x,
@@ -207,7 +207,7 @@ func drawPaddle(gameState: GameState) =
         gameState.paddle.color,
     )
 
-func drawTiles(gameState: var GameState) =
+proc drawTiles(gameState: var GameState) =
     for index, tile in gameState.tiles[]:
         let tileColor = tileColors[tileColors.len - tile.points]
 

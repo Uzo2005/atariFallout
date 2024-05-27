@@ -14,7 +14,7 @@ Atari Breakout But The Tiles Are Falling Down.
 
 ### How to run
 
-- Grab the binary and game resources for your operating system from [here](...)
+- Grab the binary and game resources for your operating system from [here](https://github.com/Uzo2005/atariFallout/releases/tag/v.1)
 
 ### Building From Source
 
@@ -22,5 +22,5 @@ Atari Breakout But The Tiles Are Falling Down.
 1. Clone this repo: `git clone https://github.com/Uzo2005/atariFallout.git`
 1. Go into the directory `cd atariFallout`
 1. Run `nimble install`, to install the `naylib` dependency(raylib bindings for nim by the awesome @planetis-m)
-1. Run `nim c -d:release -o atariFallout main.nim`
+1. Run `nim c -d:release -o:atariFallout main.nim`
 1. Run the generated binary `./atariFallout`
