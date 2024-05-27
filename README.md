@@ -14,7 +14,7 @@ Atari Breakout But The Tiles Are Falling Down.
 
 ### How to run
 
-- Grab the binary for your operating system from [here](...)
+- Grab the binary and game resources for your operating system from [here](...)
 
 ### Building From Source
 
